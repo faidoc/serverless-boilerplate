@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "afterAll",
+    "beforeAll",
+    "beforeEach",
+    "describe",
+    "expect",
+    "fit",
+    "it",
+    "jasmine",
+    "xit"
+  },
+  "settings": {
+    "import/core-modules": ["aws-sdk"]
+  }
+}
+

@@ -1,0 +1,23 @@
+service: service-name
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: default
+
+  stage: dev
+  region: us-west-2
+  deploymentBucket: service-deployment-bucket
+
+  memorySize: 128
+
+plugins:
+  - serverless-webpack
+
+functions:
+  myFunctionName:
+    handler: handler.myfunction
+    events:
+      - http:
+        path: myfunctionpath
+        method: get
