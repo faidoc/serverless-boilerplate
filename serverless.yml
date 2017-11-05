@@ -19,5 +19,5 @@ functions:
     handler: handler.myfunction
     events:
       - http:
-        path: myfunctionpath
-        method: get
+          path: myfunctionpath
+          method: get

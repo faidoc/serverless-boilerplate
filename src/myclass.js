@@ -4,7 +4,7 @@ import { successResponse } from './utils/lambda-response';
 class MyClass {
   constructor() {
     log('Inside constructor');
-    this.response = successResponse({
+    return successResponse({
       message: 'Hi There.',
     });
   }
